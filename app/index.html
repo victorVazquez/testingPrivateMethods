@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing and cover Private Methods</title>
+	<link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+</head>
+<body ng-app="CalcApp" ng-controller="CalcCtrl as calc">
+	<div class="panel panel default col-md-6 col-md-offset-3 text-center">
+		<h1>Testing and cover Private Methods</h1>
+
+		<h2>counter<br>{{calc.counter}}</h2>
+		<p class="panel-body">
+			<button class="btn btn-primary" ng-click="calc.increment()">Increment</button>
+			<button class="btn btn-primary" ng-click="calc.decrement()">Decrement</button>
+			<button class="btn btn-primary" ng-click="calc.reset()">Reset</button>
+		</p>	
+	</div>
+
+	<div class="panel panel default col-md-6 col-md-offset-3 text-left">
+		<h2>Launchpad SpaceX Info</h2>
+		<p><strong>ID:</strong><br> {{calc.launchpad.id}}</p>
+		<p><strong>Full Name:</strong><br> {{calc.launchpad.fullName}}</p>
+		<p><strong>Status:</strong><br> {{calc.launchpad.status}}</p>
+		<p><strong>Vehicles Launched:</strong><br> {{calc.launchpad.vehiclesLaunched}}</p>
+		<p><strong>Details:</strong><br> {{calc.launchpad.details}}</p>
+	</div>
+<script src="/node_modules/angular/angular.js"></script>	
+<script type="text/javascript" src="controller.js"></script>
+<script type="text/javascript" src="service.js"></script>
+</body>
+</html>
